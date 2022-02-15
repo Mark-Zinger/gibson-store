@@ -11,7 +11,7 @@ import theme from 'style/theme';
 
 
 function MyApp({ Component, pageProps, router }: AppProps) {
-  const url = `https://site-url.com${router.route}`
+  const url = `https://gibson-store.vercel.app${router.route}`
   
   
   return (
