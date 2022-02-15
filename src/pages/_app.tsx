@@ -1,5 +1,5 @@
+import { useEffect, useLayoutEffect } from 'react';
 import type { AppProps } from 'next/app'
-
 import { DefaultSeo } from 'next-seo';
 import { AnimatePresence } from 'framer-motion'
 
@@ -7,6 +7,10 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'style/global';
 import theme from 'style/theme';
 
+
+if(typeof window == undefined) {
+  console.log('\nssr\n')
+}
 
 
 

@@ -8,7 +8,7 @@ const theme:ITheme = {
     colors,
     breakpoints,
     fonts,
-    defaultFont: 'Cuprum',
+    defaultFont: 'NeueMontreal',
     typography,
 };
 

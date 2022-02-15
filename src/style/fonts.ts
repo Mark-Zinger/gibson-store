@@ -4,7 +4,7 @@ type fontFormatType = typeof fontFormats[number];
 
 export type fontType = {
     family: string;
-    weights: number[];
+    weights: string[];
     format: fontFormatType;
 };
 
@@ -14,9 +14,14 @@ export type fontNameType = keyof typeof fonts
 
 
 const fonts = {
-    Cuprum: {
-        family: 'Cuprum',
-        weights: [400, 500, 700],
+    NeueMontreal: {
+        family: 'NeueMontreal',
+        weights: ['400', '500', '500i'],
+        format: 'ttf'
+    },
+    SFProDisplay: {
+        family: 'SFProDisplay',
+        weights: ['400', '500'],
         format: 'ttf'
     }
 };
