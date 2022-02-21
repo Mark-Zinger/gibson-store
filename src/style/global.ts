@@ -3,24 +3,26 @@ import { ITheme } from './theme';
 import { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle<{ theme: ITheme }>(
-  ({ theme: { defaultFont, colors } }) => css`    
+  ({ theme: { defaultFont, colors } }) => css`
     body {
-        font-family: '${defaultFont}';
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background: ${colors.white};
+      font-family: '${defaultFont}';
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: ${colors.bodyBackground};
+      color: ${colors.primaryWhite};
+
     }
 
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     ${includeFontsAll()}
     ${includeTypography()}
-    `
+  `
 );
 
 export default GlobalStyle

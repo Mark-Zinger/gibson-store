@@ -9,6 +9,7 @@ const theme:ITheme = {
     breakpoints,
     fonts,
     defaultFont: 'NeueMontreal',
+    pageColSize: 20,
     typography,
 };
 
@@ -18,6 +19,7 @@ export interface ITheme {
     breakpoints: typeof breakpoints;
     fonts: typeof fonts;
     defaultFont: fontNameType;
+    pageColSize: number;
     typography: typeof typography;
 }
 

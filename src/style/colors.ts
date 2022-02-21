@@ -1,9 +1,11 @@
 const colors = {
-    primary: '#0295FE',
-    secondary: '#FE6E07',
-    hoverSecondaryButton: '#FE8C07',
-    white: '#F9F9F9',
-    grey: '#5C5B61'
+    bodyBackground: '#080707',
+    primaryWhite: '#ffffff',
+    secondaryWhite: '#d5d4d2',
+    grey: '#5C5B61',
+    light1_1: '#efc967',
+    light1_2: '#ef9867',
+    light2: '#ff0000'
 }
 
 export type colorType = keyof typeof colors;
