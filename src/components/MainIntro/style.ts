@@ -29,7 +29,7 @@ const LineTitle = styled(motion.h1)(
 )
 
 const InLineImage = styled(motion.img)(
-  ({theme}) => css `
+  () => css `
     height: 6.4vw;
     display: inline-block;
     // margin: 0 ${vw(30)} 0 ${vw(40)};
@@ -82,4 +82,4 @@ const IntroVideo = styled.img`
 
 `
 
-export { MainIntroContainer, LineTitle, Light, InLineImage, LineDash, LineCircle, LineQuote }
+export { MainIntroContainer, LineTitle, Light, InLineImage, LineDash, LineCircle, LineQuote, IntroVideo }
